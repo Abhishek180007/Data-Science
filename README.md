@@ -9,22 +9,27 @@ Welcome to the **Data Science Projects** repository. This repository is a compre
 The repository is organized into the following categories of projects:
 
 ### **1. Classification and Prediction**
-- **Food_Classification_CNN_GAN**: Food item classification using CNNs and GANs for data augmentation.
-- **Diabetes_Early_Detection**: Predicting early onset of diabetes using machine learning techniques.
-- **Cytology_Image_Classification**: Classification of cytology images for medical diagnosis.
-- **Cyberbullying_NLTK**: Detecting cyberbullying from text using NLTK-based sentiment analysis.
+- **E-Commerce_Trend_Analysis_and_Prediction**: Predicting trends in e-commerce datasets.
+- **Aviation_Data_Analysis**: Analyzing aviation data for safety and operational insights.
+- **SSD_HDD_Failure_Analysis_and_Failure_Forecasting**: Forecasting SSD and HDD failures for proactive maintenance.
+- **Smart_Activity_Recognition**: Recognizing human activities using sensor data and machine learning.
 - **Click Through Rate Prediction**: Predicting click-through rates for advertisements.
-- **TCS_Stock_Market_Prediction_Using_Transformer**: Stock price prediction using Transformers.
+- **Aws_Instance_Prediction_Notebooks**: Predicting AWS instance usage and trends using machine learning techniques.
+- **Diabetes_Early_Detection**: Predicting early onset of diabetes using machine learning techniques.
 
 ### **2. Natural Language Processing (NLP)**
 - **Amazon_Review_Prediction (BERT)**: Sentiment analysis on Amazon reviews using BERT.
 - **Indian_Election_Sentiment_Analysis**: Analyzing public sentiment during Indian elections.
 - **Pyspark_Tesla_Tweets_Sentiment_Analysis_Trend_Forecasting**: Sentiment analysis and trend forecasting on Tesla tweets using PySpark.
-- **Amazon_Review_Classification**: Classification of Amazon reviews using machine learning models.
+- **Amazon_Review_Classification**: Classification of Amazon reviews using machine learning & deep learning models.
+- **Cyberbullying_NLTK**: Detecting cyberbullying from text using NLTK-based sentiment analysis.
 
 ### **3. Image Processing and OCR**
+- **Food_Classification_CNN_GAN**: Food item classification using CNNs and GANs for data augmentation.
 - **Car_Number_Plate_Recognition&OCR**: Recognizing and extracting text from car number plates using OCR techniques.
 - **Rock_Classification_Swin_Transformer**: Rock classification using Swin Transformer architecture.
+- **Cytology_Image_Classification**: Classification of cytology images for medical diagnosis.
+- **Diabetes_Recognition_Using_CNNs**: Diagnosing diabetes using convolutional neural networks (CNNs).
 
 ### **4. Cybersecurity and Intrusion Detection**
 - **Intrusion_Detection**: Network intrusion detection using the CIC-IDS 2019 dataset.
@@ -34,23 +39,14 @@ The repository is organized into the following categories of projects:
 - **Traffic_Data_Analysis_Prediction**: Forecasting traffic patterns using machine learning models.
 - **Flight_Delay_Prediction_Analysis**: Predicting flight delays with exploratory data analysis.
 - **Time_Series_Analysis_Forecasting_Sentiment_Analysis**: Comprehensive time-series analysis and sentiment forecasting.
-
-### **6. Cloud and AWS**
-- **Aws_Instance_Prediction_Notebooks**: Predicting AWS instance usage and trends using notebooks.
-
-### **7. Specialized Applications**
-- **Smart_Activity_Recognition**: Recognizing human activities using sensor data and machine learning.
-- **E-Commerce_Trend_Analysis_and_Prediction**: Predicting trends in e-commerce datasets.
-- **Aviation_Data_Analysis**: Analyzing aviation data for safety and operational insights.
-- **SSD_HDD_Failure_Analysis_and_Failure_Forecasting**: Forecasting SSD and HDD failures for proactive maintenance.
-- **Diabetes_Recognition_Using_CNNs**: Diagnosing diabetes using convolutional neural networks (CNNs).
+- **TCS_Stock_Market_Prediction_Using_Transformer**: Stock price prediction using custom Transformer.
 
 ---
 
 ## 🚀 Features
 
 - **Wide-ranging Projects**: Covers topics like classification, forecasting, sentiment analysis, and more.
-- **Cutting-edge Tools**: Includes implementations using TensorFlow, PyTorch, scikit-learn, NLTK, Hugging Face, and PySpark.
+- **Cutting-edge Tools**: Includes implementations using TensorFlow, Keras, scikit-learn, NLTK, Hugging Face, and PySpark.
 - **Real-world Datasets**: Uses datasets from Kaggle, open-source benchmarks, and custom collections.
 
 ---
