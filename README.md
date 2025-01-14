@@ -46,7 +46,7 @@ The repository is organized into the following categories of projects:
 ## 🚀 Features
 
 - **Wide-ranging Projects**: Covers topics like classification, forecasting, sentiment analysis, and more.
-- **Cutting-edge Tools**: Includes implementations using TensorFlow, Keras, scikit-learn, NLTK, Hugging Face, and PySpark.
+- **Cutting-edge Tools**: Includes implementations using TensorFlow, Keras, scikit-learn, NLTK, Hugging Face, Python and PySpark.
 - **Real-world Datasets**: Uses datasets from Kaggle, open-source benchmarks, and custom collections.
 
 ---
