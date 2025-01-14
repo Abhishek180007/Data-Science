@@ -59,3 +59,8 @@ Follow these steps to set up the repository on your local machine:
    ```bash
    git clone https://github.com/Abhishek180007/Data-Science.git
    cd Data-Science
+
+## ⭐ Acknowledgments
+Special thanks to:
+Open-source datasets and pre-trained models.
+The data science and machine learning community for inspiration and resources.
