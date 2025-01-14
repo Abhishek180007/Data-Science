@@ -1,3 +1,4 @@
 *.ipynb filter=lfs diff=lfs merge=lfs -text
 Intrusion_Detection/CIC_IDS_2019.ipynb filter=lfs diff=lfs merge=lfs -text
 Amazon_Review_Predicition[[:space:]](BERT)/glove.6B.50d.txt filter=lfs diff=lfs merge=lfs -text
+*.py filter=lfs diff=lfs merge=lfs -text

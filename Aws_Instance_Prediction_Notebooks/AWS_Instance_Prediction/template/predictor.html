@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href={{url_for('static',filename='predictor.css')}}>
+    <title>AWS Spot price Prediction</title>
+</head>
+<body style="background-color:orange;">
+    <section id="prediction-form">
+        <center>
+        <form class="form" action="/predict", method="POST">
+            <h1 class="my-3 text-center"><b><u>AWS Spot price</u></b></h1>
+            
+            <div class="col-md-6 my-2">
+                    <div class="md-form">
+                        <label for="location" class="location" name="location">Location</label>
+                        <select class="location" id="location" name="location" aria-label="Location">
+                            <option selected>Select Location</option>
+                            <option value= 1>ap_northeast</option>
+                            <option value= 2>ap-south</option>
+                            <option value= 3>ca-central</option>
+                            <option value= 4>eu-west</option>
+                            <option value= 5>sa-east</option>
+                                                    </select>
+                        </div>
+                </div>
+                        <div class="col-md-6 my-2">
+                    <div class="md-form">
+                        <label for="itype" class="itype" name="itype"> Instance type</label>
+                        <select class="itype" id="itype" name="itype" aria-label="itype">
+                            <option selected>Select type</option>
+                            <option value= 0>	c1.medium	</option>
+<option value= 1>	c1.xlarge	</option>
+<option value= 2>	c3.2xlarge	</option>
+<option value= 3>	c3.4xlarge	</option>
+<option value= 4>	c3.8xlarge	</option>
+<option value= 5>	c3.large	</option>
+<option value= 6>	c3.xlarge	</option>
+<option value= 7>	c4.2xlarge	</option>
+<option value= 8>	c4.4xlarge	</option>
+<option value= 9>	c4.8xlarge	</option>
+<option value= 10>	c4.large	</option>
+<option value= 11>	c4.xlarge	</option>
+<option value= 12>	cc2.8xlarge	</option>
+<option value= 13>	cr1.8xlarge	</option>
+<option value= 14>	d2.2xlarge	</option>
+<option value= 15>	d2.4xlarge	</option>
+<option value= 16>	d2.8xlarge	</option>
+<option value= 17>	d2.xlarge	</option>
+<option value= 18>	g2.2xlarge	</option>
+<option value= 19>	g2.8xlarge	</option>
+<option value= 20>	hi1.4xlarge	</option>
+<option value= 21>	i2.2xlarge	</option>
+<option value= 22>	i2.4xlarge	</option>
+<option value= 23>	i2.8xlarge	</option>
+<option value= 24>	i2.xlarge	</option>
+<option value= 25>	i3.16xlarge	</option>
+<option value= 26>	i3.2xlarge	</option>
+<option value= 27>	i3.4xlarge	</option>
+<option value= 28>	i3.8xlarge	</option>
+<option value= 29>	i3.large	</option>
+<option value= 30>	i3.xlarge	</option>
+<option value= 31>	m1.large	</option>
+<option value= 32>	m1.medium	</option>
+<option value= 33>	m1.small	</option>
+<option value= 34>	m1.xlarge	</option>
+<option value= 35>	m2.2xlarge	</option>
+<option value= 36>	m2.4xlarge	</option>
+<option value= 37>	m2.xlarge	</option>
+<option value= 38>	m3.2xlarge	</option>
+<option value= 39>	m3.large	</option>
+<option value= 40>	m3.medium	</option>
+<option value= 41>	m3.xlarge	</option>
+<option value= 42>	m4.10xlarge	</option>
+<option value= 43>	m4.16xlarge	</option>
+<option value= 44>	m4.2xlarge	</option>
+<option value= 45>	m4.4xlarge	</option>
+<option value= 46>	m4.large	</option>
+<option value= 47>	m4.xlarge	</option>
+<option value= 48>	r3.2xlarge	</option>
+<option value= 49>	r3.4xlarge	</option>
+<option value= 50>	r3.8xlarge	</option>
+<option value= 51>	r3.large	</option>
+<option value= 52>	r3.xlarge	</option>
+<option value= 53>	r4.16xlarge	</option>
+<option value= 54>	r4.2xlarge	</option>
+<option value= 55>	r4.4xlarge	</option>
+<option value= 56>	r4.8xlarge	</option>
+<option value= 57>	r4.large	</option>
+<option value= 58>	r4.xlarge	</option>
+<option value= 59>	t1.micro	</option>
+<option value= 60>	x1.16xlarge	</option>
+<option value= 61>	x1.32xlarge	</option>
+
+                                                    </select>
+                    </div>
+                </div>
+                <div class="col-md-6 my-2">
+                    <div class="md-form">
+                        <label for="os" class="os">OS</label>
+                        <select class="os" id="os" name="os" aria-label="os">
+                            <option selected>Select OS</option>
+                            <option value= 0>Linux/unix</option>
+                            <option value= 1>Sues Linux</option>
+                            <option value= 2>Windows</option>
+                                                    </select>
+                    </div>
+                </div>
+                <div class="col-md-6 my-2">
+                    <div class="md-form">
+                        <label for="region" class="region">Region</label>
+                        <select class="region" id="region" name="region" aria-label="region">
+                            <option selected>Select Region</option>
+                            <option value= 0>ap-northeast-1a</option>
+                            <option value= 1>ap-northeast-1c</option>
+                            <option value= 0>ap-south-1a</option>
+                            <option value= 1>ap-south-1b</option>
+                            <option value= 0>eu_central-1a</option>
+                            <option value= 1>eu-central-1b</option>
+                            <option value= 0>eu-west-1a</option>
+                            <option value= 1>eu-west-1b</option>
+                            <option value= 0>sa-east-1a</option>
+                            <option value= 0>sa-east-1b</option>
+                            <option value= 1>sa-east-1c</option>
+                                                    </select>
+                    </div>
+                </div>
+                <div class="col-md-6 my-2">
+                    <div class="md-form">
+                        <label for="year" class="year">Year</label>
+                        <input type="number" class="form-control" id="year" name="year">
+                    </div>
+                </div>
+                <div class="col-md-6 my-2">
+                    <div class="md-form">
+                        <label for="month" class="month">Month</label>
+                        <input type="number" class="form-control" id="month" name="month">
+                    </div>
+                </div>
+                <div class="col-md-6 my-2">
+                    <div class="md-form">
+                        <label for="day" class="day">Day</label>
+                        <input type="number" class="form-control" id="day" name="day">
+                    </div>
+                </div>
+                <div class="col-md-6 my-2">
+                    <div class="md-form">
+                        <label for="hour" class="hour">Hour</label>
+                        <input type="number" class="form-control" id="hour" name="hour">
+                    </div>
+                </div>
+                <div class="col-md-6 my-2">
+                    <div class="md-form">
+                        <label for="minute" class="minute">Minute</label>
+                        <input type="number" class="form-control" id="minute" name="minute">
+                    </div>
+                </div>
+                <div class="col-md-6 my-2">
+                    <div class="md-form">
+                        <label for="second" class="second">Second</label>
+                        <input type="number" class="form-control" id="second" name="second">
+                    </div>
+                </div>
+                <div class="col-md-6 my-2 d-flex align-items-end justify-content-around">
+                    <button type="submit" class="btn btn-info button" style="margin-left: 100%;">Result</button>
+                </div>
+            </div>
+        </form>
+    </center>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
+
+
+

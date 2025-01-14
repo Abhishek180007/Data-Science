@@ -1,0 +1,28 @@
+<!doctype html>
+<head>
+    <style>
+    .text-center {
+    margin: 0;
+    padding:0;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+</style>
+<title>Result</title>
+</head>
+<html>
+   <body style="background-color:powderblue;">
+      <H3>Context<br/>
+AWS spot Instances allow users to bid on spare server capacity. You set a bid threshold for an instance that is usually upwards of 30% cheaper than standard on-demand AWS instances. You can save a lot of money with AWS spot instances.<br/>
+       Inspiration<br/>
+While AWS spot instances are significantly cheaper than on-demand instances, there is only one problem with spot instances: once the spot market price of an instance exceeds the bid threshold you purchased an instance for, the instance is terminated and given to others with higher bids. So while hourly server costs are cheaper, your server is liable to terminate without notice. But, there is a difference between regions and spot pricing. Sometimes there is an arbitrage between regions, and some regions have more stable prices than others (fewer price spikes). If you can find which region/AZ is most stable, you can worry less about your instance terminating without notice.</H3>
+       <div class="text-center">
+       <center>
+       <h1> AWS Spot Price Predicted = {{ prediction }}</h1>
+        </center>
+       </div>
+   </body>
+</html>
