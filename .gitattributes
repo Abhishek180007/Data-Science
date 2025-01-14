@@ -1,0 +1,2 @@
+*.ipynb filter=lfs diff=lfs merge=lfs -text
+Intrusion_Detection/CIC_IDS_2019.ipynb filter=lfs diff=lfs merge=lfs -text
